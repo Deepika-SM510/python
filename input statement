@@ -1,0 +1,9 @@
+girl_name=input("enter girl name: ")
+boy_name=input("enter boy name: ")
+
+a=int(input("enter your girl age : "))
+b=int(input("enter your boy age : "))
+age_difference=b-a
+
+print(f"{boy_name} weds {girl_name } and their age difference is {abs(a-b)}")
+print(girl_name+" weds  "+boy_name+" and there age difference is "+str(age_difference))
