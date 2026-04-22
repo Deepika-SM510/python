@@ -1,0 +1,19 @@
+#1simple greeting program
+name=input("enter a name: ")
+age=int(input("enter a age: "))
+print("hello, "+name+"!"+" you are "+str(age)+" year old")
+#2string manipulatio
+a=input("enter a string: ")
+print(a.replace(" ","_"))
+print(a.strip())
+#3character counter
+a=input("enter a string: ")
+b=a.replace(" ","")
+print(len(b))
+#4escape sequence
+a="hello \n    world"
+b="hello \\ world"
+print(a)
+print(b)
+
+
