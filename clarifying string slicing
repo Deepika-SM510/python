@@ -1,0 +1,14 @@
+#String slicing and indexing
+a="hello"
+print(a[-2:-5:-1])
+print(a[0]+a[2]+a[1])
+b=len(a)//2
+print(b)
+print(a[1]+a[b])
+print(a[:-2:-1]+a[:4])
+b="I love jesus"
+print(len(b))
+print(b[7:13]+b[1:7]+b[0:2])
+c=b.split(" ")
+print(" ".join(c[::-1]))
+
