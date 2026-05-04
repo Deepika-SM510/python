@@ -1,0 +1,17 @@
+d={"deepu":18,"deeru":17,"nagu":38}
+d1={1:2,"2sdff":23}
+print(d)
+print(d.items())
+print(type(d))
+print(d["deeru"])
+print(d.get("muniraju"))
+d["muniraju"]=48
+print(d)
+d["deepu"]=24
+print(d)
+del d["deepu"]
+print(d)
+d.pop("muniraju")
+print(d)
+d.update(d1)
+print(d)
