@@ -1,0 +1,8 @@
+#tuples
+t=(1,7,1,1,9,22,3,9)
+
+count=0
+for i in t:
+    if i==1:
+        count+=1
+print(count)    
