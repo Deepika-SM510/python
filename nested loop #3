@@ -1,0 +1,16 @@
+p=[[9,0,9],
+   [7,8,6],
+   [4,5,2]]
+p[1][1]=89
+p.sort()
+print(p)
+total=0
+result=[]
+for i in p:
+    for j in i:
+        result.append(j)
+        total+=1
+print(result)
+print(total)        
+
+
