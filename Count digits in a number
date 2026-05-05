@@ -1,0 +1,7 @@
+#Count digits in a number
+f=1256456
+count=0
+while(f>0):
+    f=f//10
+    count+=1
+print(count)
