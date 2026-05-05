@@ -1,0 +1,33 @@
+#Print numbers from 1 to 10
+a=int(input("Enter a number: "))
+for i in range(a):
+    print(i)
+# Print even numbers from 1 to 50
+b=int(input("enter a number: "))
+for i in range(a):
+    if i%2==0:
+        print("even number: ",i,end=" ")
+    if i%2!=0:
+        print("odd number:",i)
+#sum of first n numbers
+c=int(input("enter a number: "))
+sum=0
+for i in range(a):
+    sum+=i
+print(sum)
+#Factorial of a number
+d=int(input("enter a number: "))
+fact=1
+for i in range(1,d):
+    fact*=i
+print(fact)
+#reverse of a number
+e=89876
+reverse=0
+while (e>0):
+    a=e%10
+    reverse=(reverse*10)+a
+    e=e//10
+print(reverse)  
+
+#Count digits in a number
