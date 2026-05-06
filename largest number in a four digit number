@@ -1,0 +1,19 @@
+a=5298
+d=a%10
+a=a//10
+c=a%10
+a=a//10
+e=a%10
+a=a//10
+b=a%10
+print(d,c,e,b)
+if b>=d and b>=c and b>=e:
+    print(b)
+elif d>=b and d>=c and d>=e:
+    print(d)
+elif c>=d and c>=b and c>=e:
+    print(c)
+else:
+    print(e)
+
+    
