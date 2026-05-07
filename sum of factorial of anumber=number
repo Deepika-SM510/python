@@ -1,0 +1,21 @@
+a=int(input("enter a number: "))
+b=a
+total=0
+while a>0:
+    fact=1
+    d=a%10
+    while d>0:
+        fact*=d
+        d-=1
+    total+=fact
+    a=a//10
+if b==total:
+    print(True)
+else:
+    print(False)    
+print(total)
+
+  
+  
+    
+    
