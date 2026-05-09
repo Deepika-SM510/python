@@ -1,0 +1,3 @@
+def marriage(a,b):
+    print(f"{a+b}")
+marriage(26,3)    
