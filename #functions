@@ -1,0 +1,3 @@
+def marriage(boy="boy",girl="girl"):
+    print(f"{boy} marries {girl}")
+marriage()    
