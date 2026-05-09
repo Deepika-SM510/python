@@ -1,0 +1,8 @@
+rows = 4
+
+for i in range(rows):
+
+    for j in range(68 - i, 69):
+        print(chr(j), end="")
+
+    print()
