@@ -1,0 +1,17 @@
+def marks(a,b,c):
+    total=a+b+c
+    average=total/3
+    if average>=90:
+        return ("GRADE A")
+    elif average>=80:
+        return ("GRADE B")
+    elif average>=70:
+        return ("GRADE C")
+    elif average>=60:
+        return ("GRADE D")
+    elif average>=50:
+        return ("GRADE E")
+    else :
+        return ("GRADE F")
+a=marks(45,30,20)  
+print(a)
