@@ -1,0 +1,8 @@
+def number(a):
+    if a%2==0:
+        return True
+   
+    else :
+        return False
+a=number(5)        
+print(a)
