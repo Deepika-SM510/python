@@ -1,0 +1,17 @@
+def maximum(a,c):
+    if a>c:
+        return a
+    else:
+        return c 
+
+b=maximum(4,9)
+print(b)
+
+or
+
+def maximum(*a):
+      return max(a)
+b=maximum(1,2,3,6,700,45,354)
+print("maximum number:",b)
+      
+      
