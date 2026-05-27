@@ -1,0 +1,10 @@
+def palindrome(text):
+
+    if text == text[::-1]:
+        return "Palindrome"
+    else:
+        return "Not Palindrome"
+
+value = input("Enter a word or number: ")
+
+print(palindrome(value))
