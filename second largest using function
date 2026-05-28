@@ -1,0 +1,9 @@
+def second_largest(arr):
+
+    arr.sort()
+
+    return arr[-2]
+
+numbers = list(map(int, input("Enter numbers: ").split()))
+
+print("Second Largest =", second_largest(numbers))
