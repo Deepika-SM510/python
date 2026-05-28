@@ -1,0 +1,22 @@
+def calculator(a,b):
+    def add():
+        return a+b
+    def sub():
+        return a-b
+    def mul():
+        return a*b
+    def div():
+        return a/b
+    return{
+        "addI":add(),
+        "sub":sub(),
+        "mul":mul(),
+        "div":div()
+    }
+c=int(input("Enter first number: "))
+d=int(input("Enter second number: "))
+s=calculator(c,d)
+print("Addition: ",s["addI"])
+print("Subtraction: ",s["sub"])       
+print("Multiplication: ",s["mul"])
+print("Division: ",s["div"])
