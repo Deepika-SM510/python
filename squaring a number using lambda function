@@ -1,0 +1,4 @@
+square=lambda n: n*n
+
+num = int(input("Enter number: "))
+print("Square =", square(num))
