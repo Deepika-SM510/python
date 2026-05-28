@@ -1,0 +1,9 @@
+def vowels(s):
+    count=0
+    for i in range (len(s)):
+        if s[i] in "aeiouAEIOU":
+           count+=1
+    return count
+a=vowels("Anjana is a ver gOod girl in the world")
+print(a)
+print(len("Anjana is a ver gOod girl in the world"))
