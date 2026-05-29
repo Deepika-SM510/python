@@ -1,0 +1,13 @@
+d={
+    "rahul":56,
+    "sanjana":45,
+    "deepika":85,
+    "deeraj":90,
+    "nagu":95
+    }
+if 85 in d.values():
+    print(True)
+if 95 in d.values():
+    print(False)
+    
+    
