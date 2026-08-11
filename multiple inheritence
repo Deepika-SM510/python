@@ -1,0 +1,35 @@
+class Grand_parent:
+    def __init__(self, surname, colour):
+        self.surname = surname
+        self.colour = colour
+        print("Grand Parent")
+
+    def inherit(self):
+        print("Surname:", self.surname)
+        print("Colour:", self.colour)
+
+
+class Parent(Grand_parent):
+    def __init__(self, surname, colour, height):
+        super().__init__(surname, colour)
+        self.height = height
+        print("Height:", self.height)
+
+
+class Child(Parent):
+    def __init__(self, surname, colour, height, eyecolour):
+        super().__init__(surname, colour, height)
+        self.eyecolour = eyecolour
+        print("Eye Colour:", self.eyecolour)
+
+
+g = Grand_parent("Naresh", "Fair")
+g.inherit()
+
+print("\n\tCheck about PARENT")
+p = Parent("Naresh", "Fair", "6 feet 11 inches")
+p.inherit()
+
+print("\n\tCheck about CHILD")
+c = Child("Naresh", "Fair", "6 feet 11 inches", "Brown")
+c.inherit()
