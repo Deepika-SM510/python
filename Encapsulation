@@ -1,0 +1,30 @@
+class BankAccount:
+    def __init__(self,acc_no,bal):
+        self.__acc_no=acc_no
+        self.__bal=bal
+    def display(self):
+        print("ACCOUNT NUMBER: ",self.__acc_no)
+        print("BALANCE: ",self.__bal)
+    def updated_balance(self,bal):
+        self.bal=bal
+        print(f"Balance in your account is: {self.__bal}")    
+    
+    def deposit(self,Amount):
+        self.__bal+=Amount 
+        print(self.__bal)
+    def withdraw(self,Amount):
+        if Amount>self.__bal:
+            print("You can't wihdraw amount from your current ssvings")
+        else:
+            self.__bal-=Amount  
+            print(f"{self.__bal}")         
+
+c=BankAccount(1243274,50000)
+c.display()
+c.updated_balance(600000)
+c.deposit(500)
+c.withdraw(50501)
+
+
+
+
