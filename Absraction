@@ -1,0 +1,5 @@
+class Call:
+    def receiving(self):
+        print("call received Successfully >>>>>>>")
+c=Call()
+c.receiving()        
