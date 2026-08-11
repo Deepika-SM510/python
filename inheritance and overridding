@@ -1,0 +1,23 @@
+class Animal:
+    def __init__(self,name,colour):
+        self.name=name
+        self.colour=colour
+        print("constructed")
+    def display(self):
+        print("Name of the animal: ",self.name)    
+        print("Colour of the animal: ",self.colour)    
+    def sound(self):
+        print("Animal can make sounds")
+class  Dog(Animal):
+    def __init__(self,name,colour,breed):
+       super().__init__(name,colour) 
+       self.breed=breed
+       print(self.breed)
+    def sound(self):
+        print("Dog barks")   
+
+d=Dog("bruno","brown","lamborador")
+d.display()
+d.sound()
+
+            
