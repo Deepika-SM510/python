@@ -1,0 +1,4 @@
+import qrcode
+img=qrcode.make("deepika")
+img.save("deepika.png")
+print("QR code generated successfully!")
