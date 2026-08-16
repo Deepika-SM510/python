@@ -1,0 +1,28 @@
+def display_menu():
+    print("********SIMPLE CALCULATOR********")
+    print("1.ADDITION\n 2.SUBTRACTION\n 3.MULTIPLICATION\n 4.DIVISION\n 5.QUIT...........")
+while (True):
+    display_menu()
+    try:
+        choice=int(input("enter a number[1-5]: "))
+        if choice in {1,2,3,4}:
+            a=int(input("Enter first number: "))
+            b=int(input("Enter second number: "))
+            if choice==1:
+                print(f"Addition Result: {a+b}")
+            elif choice==2:
+                print(f"Subtraction result: {a-b}")    
+            elif choice==3:
+                print(f"Multiplication result: {a*b}")    
+            elif choice==4:
+                if b==0:
+                    print("Division by zero is not allowed")
+                else:
+                    print(f"Divsion result: {a/b}")    
+        elif choice==5:
+            print("Quiting")  
+            break 
+        else:
+            print("Enter proper input,ERROR")       
+    except ValueError:
+        print("Enter input has a integer")
