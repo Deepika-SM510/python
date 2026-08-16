@@ -1,0 +1,48 @@
+class Student:
+    def __init__(self,name,roll_no,marks):
+        self.name=name
+        self.roll_no=roll_no
+        self.__marks=marks
+        print("constructor is created")
+    def display(self):
+        print("Name: ",self.name)
+        print("Roll No: ",self.roll_no)
+        print("Marks: ",self.__marks)
+    def calculate_avgmarks(self,averagemarks=0):
+            self.averagemarks=averagemarks
+
+            self.averagemarks=sum(self.__marks.values())/len(self.__marks)
+            print("Average Marks: ",self.averagemarks)
+    def grade_calc(self):
+        if any (marks<35 for marks in self.__marks.values()):
+             print("Grade: Fail")
+        
+        elif self.averagemarks>=90:
+            print("Grade: A")
+            
+        elif self.averagemarks>=80:
+            print("Grade: B")
+        
+        elif self.averagemarks>=70:
+            print("Grade: C")
+            
+        elif self.averagemarks>=35:
+            print("Grade: D")
+            
+        else:
+            print("Grade: E")
+        
+    def result(self):
+            
+                if any(i<35 for i in self.__marks.values()):
+                    print(f"Result: Fail")  
+                    
+                else:
+                    print("Result: Pass")
+    def display_report(self):
+        self.display()      
+        self.calculate_avgmarks()
+        self.grade_calc()
+        self.result()
+c=Student("Anjana",101,{"python":25,"Maths":35,"AI":98}) 
+c.display_report()
