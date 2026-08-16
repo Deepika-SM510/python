@@ -1,0 +1,31 @@
+def menu():
+    print("\t>>>>>>>>>>>>>>>Bank System<<<<<<<<<<<<<<<<<<<<")
+    print("1.Check Balance\n2.Deposit Money\n3.Withdraw Money\n4.Exit")
+balance=1000
+
+while (True):
+    menu()
+    try:
+        choice=int(input("Enter your choice[1-4]: "))
+        if choice in {1,2,3}:
+           
+            if choice==1:
+                print("balance in your Bank is: ",balance)
+            elif choice==2:
+                amount=int(input("Enter depositing amount: "))
+                balance+=amount
+                print("total amount in your Bank is: ",balance)
+            elif choice==3:
+                amount=int(input("Enter withdrawing amount: "))
+                if amount>balance:
+                    print("u can not withdraw your money")
+                else:
+                    balance-=amount
+                    print("balance in your bank is: ",balance)  
+        elif choice==4:
+            print("Exit>>>>>>>>>>>")
+            break
+        else:
+            print("Enter input in the range of[1-4]")               
+    except ValueError:
+        print("enter valid input,ERROR")
