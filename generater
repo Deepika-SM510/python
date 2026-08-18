@@ -1,0 +1,7 @@
+def f(x):
+    for i in range (x):
+        yield i
+d=f(8+1)
+for j in d: 
+  
+    print(j)
